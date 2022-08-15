@@ -1,0 +1,27 @@
+node_modules
+
+.cache
+.env
+.vercel
+.output
+.yalc
+
+/build/
+/public/build
+/public/aragon-ui
+/api/index.js
+/api/index.js.map
+yalc.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Local Netlify folder
+.netlify

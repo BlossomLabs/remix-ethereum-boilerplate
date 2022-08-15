@@ -1,0 +1,50 @@
+{
+  "name": "remix-ethereum-boilerplate",
+  "private": true,
+  "description": "A remix front end for ethereum apps",
+  "version": "0.0.1",
+  "license": "",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn sync-assets && cross-env NODE_ENV=production remix build",
+    "dev": "pnpm sync-assets && cross-env NODE_ENV=development remix dev",
+    "sync-assets": "copy-aragon-ui-assets ./public",
+    "lint": "eslint ./app"
+  },
+  "dependencies": {
+    "@blossom-labs/rosette-ui": "^0.0.1-alpha.9",
+    "@react-spring/web": "^9.5.2",
+    "@remix-run/node": "^1.6.8",
+    "@remix-run/react": "^1.6.8",
+    "@remix-run/vercel": "^1.6.8",
+    "@udecode/zustood": "^0.4.4",
+    "@uniswap/widgets": "^1.1.1",
+    "@vercel/node": "^2.5.8",
+    "clipboard-polyfill": "^4.0.0-rc1",
+    "ethers": "^5.6.9",
+    "lodash.debounce": "^4.0.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "styled-components": "^5.3.5",
+    "wagmi": "^0.2.28",
+    "zustand": "^3.7.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.6.8",
+    "@remix-run/eslint-config": "^1.6.8",
+    "@remix-run/serve": "^1.6.8",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/react": "^17.0.48",
+    "@types/react-dom": "^17.0.17",
+    "@types/styled-components": "^5.1.26",
+    "@types/stylis": "^4.0.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.22.0",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
